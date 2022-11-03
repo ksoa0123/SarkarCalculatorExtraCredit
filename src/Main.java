@@ -6,11 +6,11 @@ public class Main {
 
         Scanner scan = new Scanner(System.in);
 
-        System.out.println("Enter your expression: ");
+        System.out.println("Enter your expression with *, /, +, -, %, or %: ");
 
         String userExpression = scan.nextLine();
 
-        //Find first, second, operation in the expression in format. Ex: 100 * 923
+        //Find firstDigit, secondDigit, operation in the expression in format. Ex: 100 * 923
 
         String firstDigitString  = userExpression.substring(0, userExpression.indexOf(" ")); //First digit
         String secondDigitString = userExpression.substring(userExpression.indexOf(" ") + 3); //Second Digit

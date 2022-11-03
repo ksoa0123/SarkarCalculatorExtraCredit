@@ -7,7 +7,34 @@ public class Calculator {
         this.secondDigit = secondDigit;
         this.expression = expression;
     }
+    //Method run which runs based on the expression
+    public void calculate(){
+        if (expression.equals("/")){
+            System.out.println(divide());
+        }
 
+        if (expression.equals("*")){
+            System.out.println(multiply());
+        }
+
+        if (expression.equals("-")){
+            System.out.println(subtract());
+        }
+
+        if (expression.equals("^")){
+            System.out.println(exponent());
+        }
+
+
+        if (expression.equals("+")){
+            System.out.println(addition());
+        }
+
+
+        if (expression.equals("%")){
+            System.out.println(mod());
+        }
+    }
 
     //Methods Divide, Multiply, Subtract, Exponent, Addition, Mod
     public double divide(){
@@ -35,11 +62,7 @@ public class Calculator {
     }
 
 
-    //Method run which runs based on the expression
-    public void calculate(){
-        if (expression.equals("*")){
-            System.out.println(multiply());
-        }
-    }
+
+
 
 }
